@@ -172,22 +172,26 @@ Use **[Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privil
 8. Type in the cmd window on your laptop: `fastboot erase metadata` and `fastboot erase system`.
 9. Type `fastboot reboot recovery`.
 10. Click Install, go to ROM img file location, click it and swipe
+11. Click Wipe - Format Data - type "yes" - Enter (Don't if installing GApps or flashing refused).
+12. Click Home - Reboot - System (Don't if installing GApps or flashing refused).
 
 **if it refuses, try this:**
 
-12. Click Home button, Install, go to PBRP zip file location, click it, and swipe.
-13. Click Home button - Reboot - Recovery.
-14. You should be in PBRP now (TWRP doesn't allow ROMs other than RMX2040).
-15. Click Install, go to ROM img file location, click it and swipe
+11. Click Home button, Install, go to PBRP zip file location, click it, and swipe.
+12. Click Home button - Reboot - Recovery.
+13. You should be in PBRP now (TWRP doesn't allow ROMs other than RMX2040).
+14. Click Install, go to ROM img file location, click it and swipe
+19. Click Wipe - Format Data - type "yes" - Enter (Don't if installing GApps or it didn't work).
+20. Click Home - Reboot - System (Don't if installing GApps or flashing didn't work).
 
 **if that also didn't work, try this:**
 
-16. Click Advanced - ADB Sideload, check Wipe Dalvik Cache and Wipe Cache, and swipe.
-17. Type in the cmd on your computer: `adb sideload [zip-file-name-of-installed-os.zip]` (don't include the square brackets).
-18. If it says on the PC it failed at 48% or something similar, it's okay. Just check the phone to see if it says it's successful.
-19. Click Cancel - Home
-20. Click Wipe - Format Data - type "yes" - Enter (Don't if installing GApps).
-21. Click Home - Reboot - System (Don't if installing GApps).
+15. Click Advanced - ADB Sideload, check Wipe Dalvik Cache and Wipe Cache, and swipe.
+16. Type in the cmd on your computer: `adb sideload [zip-file-name-of-installed-os.zip]` (don't include the square brackets).
+17. If it says on the PC it failed at 48% or something similar, it's okay. Just check the phone to see if it says it's successful.
+18. Click Cancel - Home
+19. Click Wipe - Format Data - type "yes" - Enter (Don't if installing GApps).
+20. Click Home - Reboot - System (Don't if installing GApps).
 
 **Installing GApps or FOSSApps (optional):**
 
@@ -212,26 +216,26 @@ S: means superuser (pre-rooted)
 
 ### Guide:
 1. Extract the zip or xz file using 7zip or WinRAR.
-2. Connect your phone to the PC, open Platform Tools, and click on the address bar where the file path is shown. Type `cmd` and press Enter to open a CMD window.
+2. Connect your phone to the PC, copy GApps or FOSSapps to your phone (optional), open Platform Tools, and click on the address bar where the file path is shown. Type `cmd` and press Enter to open a CMD window.
 3. Type `adb reboot fastboot`. You should see TWRP fastbootd.
 4. Type the following:
    - `fastboot --disable-verification flash vbmeta vbmeta.img`
    - `fastboot reboot fastboot`
    - `fastboot erase system`
    - `fastboot flash system [name-of-gsi-img.img]` (don't include the square brackets)
+
+     **don't do these if NOT installing GApps**
+
+   - **'fastboot reboot recovery'**
+   - **go to install - go to GApps location - click it and swipe**
+   - **click home, reboot, fastbootd**
+   - **continue with the next steps:**
+
+
    - `fastboot -w`
    - `fastboot reboot bootloader` (you should see a black screen with 3 or more lines)
    - `fastboot erase userdata`
    - `fastboot reboot system`
-
-**Installing GApps or FOSSApps (optional):**
-
-5. Transfer the zip file from the PC to your phone.
-6. Type `adb reboot recovery` in the CMD (after enabling USB debugging previously demonestrated [here](https://github.com/Mazen7676/RMX2040-full-guide/tree/main#unlock-bootloader)).
-7. In TWRP recovery, go to Wipe and swipe.
-8. Go to Install, navigate to the zip file location, click it, and swipe.
-9. Go to Wipe - Format Data - type "yes" and enter.
-10. Finally, go to Reboot - System.
 
 ---
 
