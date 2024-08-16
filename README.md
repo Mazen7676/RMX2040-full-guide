@@ -1,7 +1,7 @@
 # Realme 6i Guide
 
-In this page, I'll cover everything you can do with Realme 6i.
-(btw i'm too lazy to upload the "files above" thing just get it from [here](t.me/narzo10club)
+- In this page, I'll cover everything you can do with Realme 6i.
+- (btw i'm too lazy to upload the "files above" thing just get it from [here](t.me/narzo10club)
 
 ## Rollback to Android 10
 
