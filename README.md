@@ -1,4 +1,4 @@
-[WARNING: THIS GUIDE IS OUTDATED!! you can now install Android 16 on realme 6i, This guide will be updated later, if you want help for now,ask away at [the telegram group](t.me/narzo10club)
+[WARNING: THIS GUIDE IS OUTDATED!! you can now install Android 16 on realme 6i, This guide will be updated later, if you want help for now,ask away at [the telegram group](t.me/narzo10club)]
 
 # Realme 6i Guide
 
